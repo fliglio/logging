@@ -4,7 +4,7 @@ namespace Fliglio\Logger;
 
 namespace Psr\Log\LoggerInterface;
 
-interface FloggerInterface extends LoggerInterface {
+interface FLoggerInterface extends LoggerInterface {
 
 	public function context();
 }

@@ -5,10 +5,12 @@ namespace Fliglio\Logging;
 use Psr\Log\AbstractLogger;
 use Psr\Log\LoggerInterface;
 
-class Flogger extends AbstractLogger {
+class FLogger extends AbstractLogger {
+
 	private $log;
 	private $ctx;
-	public function __construct(LoggerInterface $log, FlogContext $ctx) {
+
+	public function __construct(LoggerInterface $log, FLogContext $ctx) {
 		$this->log = $log;
 		$this->ctx = $ctx;
 	}

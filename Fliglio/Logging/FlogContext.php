@@ -2,7 +2,7 @@
 
 namespace Fliglio\Logging;
 
-class FlogContext {
+class FLogContext {
 
 	private $data = [];
 
