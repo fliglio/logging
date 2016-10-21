@@ -9,5 +9,4 @@ trait FLog {
 		return FLogRegistry::get();
 	}
 
-
 }
