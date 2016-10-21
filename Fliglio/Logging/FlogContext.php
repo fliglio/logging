@@ -2,17 +2,21 @@
 
 namespace Fliglio\Logging;
 
-class FlogContext implement unset {
+class FlogContext {
 
 	private $data = [];
 
-	public function set($key, $val) {
+	public function add($key, $val) {
 		$this->data[$key] = $val;
+		return $this;
 	}
 
-	public function unset($key) {
+	public function remove($key) {
 		unset($this->data[$key]);
 	}
-
+	
+	public function toArray() {
+		return $this->data;
+	}
 
 }

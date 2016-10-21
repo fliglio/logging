@@ -11,6 +11,10 @@ class Foo {
 
 
 	public function doIt() {
-		$this->log();
+		$this->log()->info("foo");                     //foo
+		$this->log()->context()->add("bar", "baz");
+		$this->log()->info("foo");                     //bar=baz, foo
+		$this->log()->info("foo", ["bar" => "boo"]);   //bar=boo, foo
+		$this->log()->info("foo");                     //bar=baz, foo
 	}
 }
