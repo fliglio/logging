@@ -1,6 +1,6 @@
 <?php
-namespace Fliglio\Logging;
 
+namespace Fliglio\Logging;
 
 class FlogTest extends \PHPUnit_Framework_TestCase {
 	use Flog;
@@ -10,7 +10,6 @@ class FlogTest extends \PHPUnit_Framework_TestCase {
 	public function setUp() {
 		$l = new StubLogger();
 		FlogRegistry::set(new Flogger($this->l));
-
 	}
 
 	public function testFlog() {
