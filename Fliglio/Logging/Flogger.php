@@ -18,7 +18,10 @@ class Flogger extends AbstractLogger {
 	}
 
 	public function log($l, $m, array $c = []) {
-		$this->log->log($l, $m, $c);
+		
+		$cMerged = array_merge($this->context()->toArray(), $c);
+
+		$this->log->log($l, $m, $cMerged);
 	}
 
 
