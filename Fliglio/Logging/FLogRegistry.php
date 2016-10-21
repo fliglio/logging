@@ -2,19 +2,20 @@
 
 namespace Fliglio\Logging;
 
+
 class FLogRegistry {
 
 	private static $l;
 
 	private function __construct() {}
 
-	public static function set(FloggerInterface $l) {
+	public static function set(FLoggerInterface $l) {
 		self::$l = $l;
 	}
 
 	public static function get() {
 		if (!isset(self::$l)) {
-			throw new FlogException('Logger not set');
+			throw new FLogException('Logger not set');
 		}
 		return self::$l;
 	}
