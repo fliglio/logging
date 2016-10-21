@@ -3,13 +3,13 @@
 namespace Fliglio\Logging;
 
 class FlogTest extends \PHPUnit_Framework_TestCase {
-	use FLog;
+	use Flog;
 
 	private $l;
 
 	public function setUp() {
-		$this->l = new StubLogger();
-		FLogRegistry::set(new Flogger($this->l));
+		$l = new StubLogger();
+		FlogRegistry::set(new Flogger($this->l, new FlogContext()));
 	}
 
 	public function testFlog() {
