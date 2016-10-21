@@ -1,6 +1,6 @@
 <?php
 
-namespace Fliglo\Logging;
+namespace Fliglio\Logging;
 
 use Psr\Log\AbstractLogger;
 use Psr\Log\LoggerInterface;
