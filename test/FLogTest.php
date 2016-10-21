@@ -14,7 +14,13 @@ class FlogTest extends \PHPUnit_Framework_TestCase {
 	}
 
 	public function testFlog() {
-
+		// given
+		$ex = [
+			["INFO", "foo", []],
+			["INFO", "foo", ["bar" => "baz"]],
+			["INFO", "foo", ["bar" => "boo"]],
+			["INFO", "foo", ["bar" => "baz"]],
+		];
 		// when
 		$this->log()->info("foo");                     //foo
 		$this->log()->context()->add("bar", "baz");
@@ -24,6 +30,6 @@ class FlogTest extends \PHPUnit_Framework_TestCase {
 
 
 		// then
-		$this->assertEquals($this->l->store, [], "these should match");
+		$this->assertEquals($this->l->store, $ex, "these should match");
 	}
 }
