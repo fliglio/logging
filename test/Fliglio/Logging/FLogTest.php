@@ -3,22 +3,22 @@
 namespace Fliglio\Logging;
 
 class FlogTest extends \PHPUnit_Framework_TestCase {
-	use Flog;
+	use FLog;
 
 	private $l;
 
 	public function setUp() {
-		$l = new StubLogger();
-		FlogRegistry::set(new Flogger($this->l, new FlogContext()));
+		$this->l = new StubLogger();
+		FLogRegistry::set(new FLogger($this->l, new FLogContext()));
 	}
 
 	public function testFlog() {
 		// given
 		$ex = [
-			["INFO", "foo", []],
-			["INFO", "foo", ["bar" => "baz"]],
-			["INFO", "foo", ["bar" => "boo"]],
-			["INFO", "foo", ["bar" => "baz"]],
+			["info", "foo", []],
+			["info", "foo", ["bar" => "baz"]],
+			["info", "foo", ["bar" => "boo"]],
+			["info", "foo", ["bar" => "baz"]],
 		];
 		// when
 		$this->log()->info("foo");                     //foo

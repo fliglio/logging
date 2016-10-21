@@ -5,7 +5,7 @@ namespace Fliglio\Logging;
 use Psr\Log\AbstractLogger;
 use Psr\Log\LoggerInterface;
 
-class FLogger extends AbstractLogger {
+class FLogger extends AbstractLogger implements FLoggerInterface {
 
 	private $log;
 	private $ctx;

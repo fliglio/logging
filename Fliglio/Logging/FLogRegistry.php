@@ -2,6 +2,7 @@
 
 namespace Fliglio\Logging;
 
+
 class FLogRegistry {
 
 	private static $l;
