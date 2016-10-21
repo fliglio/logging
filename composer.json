@@ -18,5 +18,8 @@
     },
     "autoload": {
         "psr-0": { "Fliglio\\Logging\\": "" }
+    },
+    "autoload-dev": {
+        "psr-0": { "Fliglio\\Logging\\": "test/" }
     }
 }
