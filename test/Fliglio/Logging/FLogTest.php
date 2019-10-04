@@ -2,6 +2,8 @@
 
 namespace Fliglio\Logging;
 
+
+
 class FlogTest extends \PHPUnit_Framework_TestCase {
 	use FLog;
 
