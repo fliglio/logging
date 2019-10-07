@@ -7,7 +7,7 @@ Run tests using:
 
 	$ make test
 
- supplies the `\Fliglio\Logging\Flog` trait to add in a psr compatible `log()` method.
+ supplies the `\Fliglio\Logging\FLog` trait to add in a psr compatible `log()` method.
 
 
 Configure with monolog
