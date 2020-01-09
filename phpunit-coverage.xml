@@ -1,6 +1,6 @@
 <phpunit colors="true" backupGlobals="false">
 	<testsuites>
-		<testsuite name="Fliglio FlFc">
+		<testsuite name="Fliglio Logging">
 			<directory>./test</directory>
 		</testsuite>
 	</testsuites>
