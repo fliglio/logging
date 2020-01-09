@@ -11,4 +11,5 @@ class StubLogger extends AbstractLogger {
 	public function log($l, $m, array $c = []) {
 		$this->store[] = [$l, $m, $c];
 	}
+
 }

@@ -2,8 +2,6 @@
 
 namespace Fliglio\Logging;
 
-
-
 class FlogTest extends \PHPUnit_Framework_TestCase {
 	use FLog;
 
@@ -33,4 +31,5 @@ class FlogTest extends \PHPUnit_Framework_TestCase {
 		// then
 		$this->assertEquals($this->l->store, $ex, "these should match");
 	}
+
 }

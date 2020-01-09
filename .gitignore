@@ -1,3 +1,4 @@
 vendor
 error_log
 composer.lock
+build

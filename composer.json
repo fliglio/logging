@@ -9,17 +9,21 @@
         }
     ],
     "require": {
-        "php"     : ">=5.4",
+        "php"     : ">=5.6",
         "psr/log" : "~1.0"
     },
     "require-dev": {
-        "phpunit/phpunit": "5.6.*",
+        "phpunit/phpunit": "5.7.*",
         "katzgrau/klogger" : "1.2.*"
     },
     "autoload": {
-        "psr-0": { "Fliglio\\Logging\\": "" }
+        "psr-4": { 
+			"Fliglio\\Logging\\": "src/" 
+		}
     },
     "autoload-dev": {
-        "psr-0": { "Fliglio\\Logging\\": "test/" }
+        "psr-4": { 
+			"Fliglio\\Logging\\": "test/" 
+		}
     }
 }
