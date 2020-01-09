@@ -18,12 +18,12 @@
     },
     "autoload": {
         "psr-4": { 
-			"Fliglio\\Logging\\": "src/" 
-		}
+            "Fliglio\\Logging\\": "src/" 
+        }
     },
     "autoload-dev": {
         "psr-4": { 
-			"Fliglio\\Logging\\": "test/" 
-		}
+            "Fliglio\\Logging\\": "test/" 
+        }
     }
 }

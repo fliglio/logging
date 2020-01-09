@@ -17,7 +17,7 @@ class FLogContext {
 	}
 
 	/**
-	 * @param [type] $key
+	 * @param string $key
 	 * @return void
 	 */
 	public function remove($key) {
