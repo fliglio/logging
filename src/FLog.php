@@ -5,7 +5,7 @@ namespace Fliglio\Logging;
 trait FLog {
 
 	/**
-	 * @return FLogRegistry
+	 * @return FLoggerInterface
 	 */
 	public function log() {
 		return FLogRegistry::get();
